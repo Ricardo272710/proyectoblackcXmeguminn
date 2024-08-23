@@ -10,7 +10,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   let name2 = conn.getName(m.sender)
   
   if (user.registered === true) throw `*『✦』Ya estás registrado, para volver a registrarte, usa el comando: #unreg*`
-  if (!Reg.test(text)) throw `*『✦』El comando ingresado es incorrecto, uselo de la siguiente manera:*\n\n#reg *Nombre.edad*\n\n\`\`\`Ejemplo:\`\`\`\n#reg *${name2}.18*`
+  if (!Reg.test(text)) throw `*『✦』El comando ingresado es incorrecto, uselo de la siguiente manera:*\n\n#reg *Nombre.edad*\n\n\`\`\`Ejemplo:\`\`\`\n#reg Ricardo.18*`
 
   let [_, name, splitter, age] = text.match(Reg)
   
@@ -61,7 +61,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
         title: '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰',
         body: wm, 
         thumbnailUrl: 'https://telegra.ph/file/0bb7e9e7c8cb4e820f1fe.jpg', 
-        sourceUrl: canales,
+        sourceUrl: ,
         mediaType: 1,
         showAdAttribution: true,
         renderLargerThumbnail: true,
